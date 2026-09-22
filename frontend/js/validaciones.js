@@ -6,9 +6,9 @@ const dominiosPermitidos = [
 ];
 
 
-// =====================================================
-// FUNCIONES GENERALES
-// =====================================================
+
+// FUNCIONES
+
 
 function correoValido(correo) {
 
@@ -41,9 +41,9 @@ function guardarUsuarios(usuarios) {
 }
 
 
-// =====================================================
-// R.1 - INICIO DE SESIÓN
-// =====================================================
+
+// R.1 INICIO DE SESIÓN
+
 
 const formLogin = document.getElementById("formLogin");
 
@@ -106,7 +106,7 @@ if (formLogin) {
         }
 
 
-        // Validar contraseña
+        //contraseña esta vien
 
         if (contrasena === "") {
 
@@ -129,20 +129,18 @@ if (formLogin) {
         }
 
 
-        // Si las validaciones básicas fallaron,
-        // no buscamos el usuario.
 
         if (!valido) {
             return;
         }
 
 
-        // Obtener usuarios guardados
+        //Obtener usuarios guardados
 
         const usuarios = obtenerUsuarios();
 
 
-        // Buscar usuario por correo
+        // Buscar usuario por correo v:
 
         const usuarioEncontrado = usuarios.find(function(usuario) {
 
@@ -151,7 +149,7 @@ if (formLogin) {
         });
 
 
-        // Comprobar usuario
+        
 
         if (!usuarioEncontrado) {
 
@@ -185,9 +183,8 @@ if (formLogin) {
 }
 
 
-// =====================================================
-// R.2 - REGISTRO DE USUARIO
-// =====================================================
+
+// R.2 REGISTRO DE USUARIO
 
 const formRegistro =
     document.getElementById("formRegistro");
