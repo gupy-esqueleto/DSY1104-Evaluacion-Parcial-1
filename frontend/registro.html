@@ -1,0 +1,123 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de usuario</title>
+</head>
+
+<body>
+
+    <h1>Registro de usuario</h1>
+
+    <form id="formRegistro">
+
+        <label for="run">RUN:</label>
+        <input
+            type="text"
+            id="run"
+            maxlength="9"
+            required
+        >
+
+        <p id="errorRun"></p>
+
+
+        <label for="nombre">Nombre:</label>
+        <input
+            type="text"
+            id="nombre"
+            required
+        >
+
+
+        <label for="apellidos">Apellidos:</label>
+        <input
+            type="text"
+            id="apellidos"
+            required
+        >
+
+
+        <label for="correoRegistro">Correo:</label>
+        <input
+            type="email"
+            id="correoRegistro"
+            maxlength="100"
+            required
+        >
+
+        <p id="errorCorreoRegistro"></p>
+
+
+        <label for="contrasenaRegistro">Contraseña:</label>
+        <input
+            type="password"
+            id="contrasenaRegistro"
+            minlength="4"
+            maxlength="10"
+            required
+        >
+
+        <p id="errorContrasenaRegistro"></p>
+
+
+        <label for="fechaNacimiento">Fecha de nacimiento:</label>
+        <input
+            type="date"
+            id="fechaNacimiento"
+        >
+
+
+        <label for="tipoUsuario">Tipo de usuario:</label>
+
+        <select id="tipoUsuario">
+            <option value="">Seleccione</option>
+            <option value="cliente">Cliente</option>
+            <option value="vendedor">Vendedor</option>
+            <option value="administrador">Administrador</option>
+        </select>
+
+
+        <label for="region">Región:</label>
+
+        <select id="region">
+            <option value="">Seleccione</option>
+            <option value="metropolitana">Región Metropolitana</option>
+        </select>
+
+
+        <label for="comuna">Comuna:</label>
+
+        <select id="comuna">
+            <option value="">Seleccione</option>
+            <option value="santiago">Santiago</option>
+            <option value="maipu">Maipú</option>
+            <option value="providencia">Providencia</option>
+        </select>
+
+
+        <label for="direccion">Dirección:</label>
+
+        <input
+            type="text"
+            id="direccion"
+            maxlength="300"
+            required
+        >
+
+
+        <button type="submit">Registrarse</button>
+
+        <p id="mensajeRegistro"></p>
+
+    </form>
+
+    <a href="login.html">Volver al inicio de sesión</a>
+
+    <script src="js/validaciones.js"></script>
+
+</body>
+</html>
+```

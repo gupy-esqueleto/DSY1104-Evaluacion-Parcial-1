@@ -1,0 +1,49 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de sesión</title>
+</head>
+
+<body>
+
+    <h1>Inicio de sesión</h1>
+
+    <form id="formLogin">
+
+        <label for="correo">Correo electrónico:</label>
+        <input
+            type="email"
+            id="correo"
+            maxlength="100"
+            required
+        >
+
+        <p id="errorCorreo"></p>
+
+        <label for="contrasena">Contraseña:</label>
+        <input
+            type="password"
+            id="contrasena"
+            minlength="4"
+            maxlength="10"
+            required
+        >
+
+        <p id="errorContrasena"></p>
+
+        <button type="submit">Ingresar</button>
+
+        <p id="mensajeLogin"></p>
+
+    </form>
+
+    <a href="registro.html">Crear una cuenta</a>
+
+    <script src="js/validaciones.js"></script>
+
+</body>
+</html>
+```
